@@ -28,13 +28,29 @@ the last-version is this ⬆️
   compile 'com.werb.pickphotoview:pickphotoview:last-version'
 ```
 
+some Library already dependency
+
+* Glide
+* Recyclerview
+* Rxandroid
+* Gson
+
+If you don't want to dependency this Library version , you can replace it just like
+
+```
+  compile ('com.werb.pickphotoview:pickphotoview:last-version',{
+        exclude group: 'com.google.code.gson'
+  })
+  compile 'com.google.code.gson:gson:XXXX'
+```
+
 #### Maven
 
 ```
   <dependency>
     <groupId>com.werb.pickphotoview</groupId>
     <artifactId>pickphotoview</artifactId>
-    <version>0.0.4-beta8</version>
+    <version>last-version</version>
     <type>pom</type>
   </dependency>
 ```
@@ -80,3 +96,10 @@ Make sure you have permissions about CAMERA and WRITE／READ_EXTERNAL_STORAGE be
 ## License
 
 [Apache2.0](https://github.com/Werb/PickPhotoSample/blob/master/LICENSE)
+
+## Last Update (2017.2.28)
+
+#### [v0.0.5-beta7](https://github.com/Werb/PickPhotoSample/releases/tag/v0.0.5-beta7)
+
+1. change activity launchmode
+2. change cursor photo by DATE_MODIFIED desc
